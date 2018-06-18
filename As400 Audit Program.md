@@ -1,6 +1,5 @@
-# AS/400 (also known as IBM i, power System and iSeries) Audit Program #
-Objectives: To review the security settings on the AS/400 system to ensure that the confidentiality, integrity and availability of the application(s) 
-it supports are maintained.
+#AS/400 (also known as IBM i, power System and iSeries) Audit Program#
+###**Objectives: To review the security settings on the AS/400 system to ensure that the confidentiality, integrity and availability of the application(s) it supports are maintained.**###
 
 Author: 	Ian Cooke
 Twitter:	@COOKEI
@@ -20,7 +19,7 @@ Password settings - DSPSYSVAL SYSVAL(QPWD*)
 Auditing settings - DSPSYSVAL SYSVAL(QAUD*) OUTPUT(*PRINT)
 
 For each of the above copy spool file to an output file (CPYSPLF command)
-Compare the output values to the values as recommend in the ìNotes to Auditorî section.
+Compare the output values to the values as recommend in the ‚ÄúNotes to Auditor‚Äù section.
 
 Also run
 PRTSYSSECA
@@ -122,7 +121,7 @@ Control 1: Access to such tools such be restricted and granted on an as needed b
 
 Test 1
 
-Question if any of the tools in the ìnotes to auditorî are in use. See if exit points are defined for these
+Question if any of the tools in the ‚Äúnotes to auditor‚Äù are in use. See if exit points are defined for these
 
 WRKREGINF *ALL *PRINT
 Copy spoof file to an output file.
@@ -172,10 +171,10 @@ DSPOBJD OBJ(library name/*ALL)  OBJTYPE(*PGM) OUTPUT(*OUTFILE) OUTFILE(outfile n
 For the main file (data) library from above 
 DSPOBJD OBJ(library name/*ALL)  OBJTYPE(*FILE) OUTPUT(*OUTFILE) OUTFILE(outfile name)
 
-For 5 main or ìimportantî programs (e.g. Maintenance, transactions etc.) from DSPOBJD above 
+For 5 main or ‚Äúimportant‚Äù programs (e.g. Maintenance, transactions etc.) from DSPOBJD above 
 DSPOBJAUT OBJ(library name/program name) OBJTYPE(*PGM) OUTPUT(*OUTFILE) OUTFILE(outfile name n) Where n is a number from 1 to 5
 
-For 5 main or ìimportantî files (e.g. Master, transactions etc) from above
+For 5 main or ‚Äúimportant‚Äù files (e.g. Master, transactions etc) from above
 DSPOBJAUT OBJ(library name/program name) OBJTYPE(*FILE) OUTPUT(*OUTFILE) OUTFILE(outfile name n) Where n is a number from 1 to 5  
 
 Review the selected objects to ensure that the authority is appropriate.  The authority should be reviewed in conjunction with the user authority (see the risk below)
