@@ -1,10 +1,9 @@
-# AS/400 (also known as IBM i, power System and iSeries) Audit Program #
+# AS/400 (also known as IBM i, Power System and iSeries) Audit Program #
 ### **Objectives: To review the security settings on the AS/400 system to ensure that the confidentiality, integrity and availability of the application(s) it supports are maintained.** ###
 
 **Author: 	Ian Cooke
 Twitter:	@COOKEI
 Date:		18/06/18**
-
 
 _____________________________________________
 
@@ -13,7 +12,7 @@ Risk 1: The system is not configured securely or according to best practice.
 Control 1: Ensure that the system values are configured security or according to best practice.
 
 Test 1
-
+\
 Output the system values using the following commands:
 Security settings - DSPSYSVAL *SEC OUTPUT(*PRINT)
 Password settings - DSPSYSVAL SYSVAL(QPWD*)
@@ -26,8 +25,9 @@ Also run
 PRTSYSSECA
 The Print System Security Attributes (PRTSYSSECA) command prints a report of security related system values and network attributes to a spooled file. 
 The report includes the system value or network attribute name, the current value, and the recommended value.
+\
 
-Notes to Auditor: System Value / Recommended Value / Explanation
+Notes to Auditor: System Value / Recommended Value / Explanation /
 
 QSECURITY / 40 or 50 / Controls the level of operating system integrity. Forty is the absolute minimum acceptable level.
 Thirty has numerous well-known exploits. Twenty and 10 indicate that every user has root-level privileges.
