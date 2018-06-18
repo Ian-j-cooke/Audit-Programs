@@ -7,12 +7,14 @@ Date:		18/06/18**
 
 _____________________________________________
 
-Risk 1: The system is not configured securely or according to best practice.
+**Risk 1: The system is not configured securely or according to best practice.
 
 Control 1: Ensure that the system values are configured security or according to best practice.
 
-Test 1
+Test 1**
+
 \
+
 Output the system values using the following commands:
 Security settings - DSPSYSVAL *SEC OUTPUT(*PRINT)
 Password settings - DSPSYSVAL SYSVAL(QPWD*)
@@ -25,6 +27,7 @@ Also run
 PRTSYSSECA
 The Print System Security Attributes (PRTSYSSECA) command prints a report of security related system values and network attributes to a spooled file. 
 The report includes the system value or network attribute name, the current value, and the recommended value.
+
 \
 
 Notes to Auditor: System Value / Recommended Value / Explanation /
