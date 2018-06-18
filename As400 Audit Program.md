@@ -1,5 +1,5 @@
-#AS/400 (also known as IBM i, power System and iSeries) Audit Program#
-###**Objectives: To review the security settings on the AS/400 system to ensure that the confidentiality, integrity and availability of the application(s) it supports are maintained.**###
+# AS/400 (also known as IBM i, power System and iSeries) Audit Program #
+### ** Objectives: To review the security settings on the AS/400 system to ensure that the confidentiality, integrity and availability of the application(s) it supports are maintained. ** ###
 
 Author: 	Ian Cooke
 Twitter:	@COOKEI
