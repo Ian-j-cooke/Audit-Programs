@@ -1,9 +1,10 @@
 # AS/400 (also known as IBM i, Power System and iSeries) Audit Program #
 ### **Objectives: To review the security settings on the AS/400 system to ensure that the confidentiality, integrity and availability of the application(s) it supports are maintained.** ###
 
-**Author: 	Ian Cooke
-Twitter:	@COOKEI
-Date:		18/06/18**
+**Author: 	Ian Cooke**
+**Email: Ian_j_cooke@hotmail.com**
+**Twitter:	@COOKEI**
+**Date:		18/06/18**
 
 _____________________________________________
 
@@ -149,7 +150,8 @@ Exit Point	Server Description
 *FTPREXEC	Remote command through FTP
 *REXEC_SO	Remote command sign-on (logon)
 *TFRFCL		Client file transfer server
-<pre>
+
+</pre>
 _____________________________________________
 
 **Risk 3: The authority on systems programs and files within the operating system are not securely configured.**
@@ -157,6 +159,8 @@ _____________________________________________
 **Control 1: Authority to programs and files should be to authorised users only and on an as needed basis**
 
 **Test 1:**
+
+<pre>
 
 For the application(s) under review, request an appropriately authorised user, to:
  
@@ -181,15 +185,17 @@ DSPOBJAUT OBJ(library name/program name) OBJTYPE(*FILE) OUTPUT(*OUTFILE) OUTFILE
 Review the selected objects to ensure that the authority is appropriate.  The authority should be reviewed in conjunction with the user authority (see the risk below)
 Answer List: Unsatisfactory (0); Satisfactory except for (4); Satisfactory (7); Good (10) 
 
+</pre>
 _____________________________________________
 
 
-Risk 4: User authority is not correctly set allowing user access to programs or files to which they should not be entitled.
+**Risk 4: User authority is not correctly set allowing user access to programs or files to which they should not be entitled.**
 
-Control 1: User authority should be set under the principle of least privilege
+**Control 1: User authority should be set under the principle of least privilege**
 
-Test 1:
+**Test 1:**
 
+<pre>
 Output all users to an output file 
 DSPUSRPRF(*ALL)  TYPE(*ALL)  OUTPUT(*OUTFILE)  OUTFILE(outfile) 
 Check the authority in conjunction with the object authority in risk 3 above
@@ -220,3 +226,4 @@ Special Authority Name	Special Authority Description
 *JOBCTL			System operator controls
 *SAVSYS			Backup and restore operations 
 
+</pre>
