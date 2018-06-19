@@ -13,7 +13,7 @@ _____________________________________________
 
 **Test 1**
 
-<div>
+<pre>
 
 Output the system values using the following commands:
 Security settings - DSPSYSVAL *SEC OUTPUT(*PRINT)
@@ -25,10 +25,9 @@ Compare the output values to the values as recommend in the â€œNotes to Auditorâ
 
 Also run
 PRTSYSSECA
-The Print System Security Attributes (PRTSYSSECA) command prints a report of security related system values and network attributes to a spooled file. 
-The report includes the system value or network attribute name, the current value, and the recommended value.
+The Print System Security Attributes (PRTSYSSECA) command prints a report of security related system values and network attributes to a spooled file. The report includes the system value or network attribute name, the current value, and the recommended value.
 
-<div>
+<pre>
 
 Notes to Auditor: System Value / Recommended Value / Explanation /
 
