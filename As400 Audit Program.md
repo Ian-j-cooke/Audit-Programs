@@ -112,7 +112,7 @@ The non-intuitive values are:
 QPWDVLDPGM /  *NONE, *REGFAC or a program name / A system exit program that sees and controls password changes. A program may be registered that prevents the creation of weak passwords or dictionary words. Any program registered here should be treated as very sensitive due to its ability to see and disclose
  passwords.
 
-<pre>
+<endpre>
 _____________________________________________
 
 **Risk 2: Operating systems users have access to data because they have access to tools such as File Transfer Protocol (FTP) and Open Database Connectivity (ODBC) via client access.**
