@@ -27,7 +27,7 @@ Also run
 PRTSYSSECA
 The Print System Security Attributes (PRTSYSSECA) command prints a report of security related system values and network attributes to a spooled file. The report includes the system value or network attribute name, the current value, and the recommended value.
 
-<pre>
+
 
 Notes to Auditor: System Value / Recommended Value / Explanation /
 
@@ -115,15 +115,17 @@ QPWDVLDPGM /  *NONE, *REGFAC or a program name / A system exit program that sees
 the creation of weak passwords or dictionary words. Any program registered here should be treated as very sensitive due to its ability to see and disclose
  passwords.
 
+<pre>
 _____________________________________________
 
 
-Risk 2: Operating systems users have access to data because they have access to tools such as File Transfer Protocol (FTP) and Open Database Connectivity (ODBC) via client access.
+**Risk 2: Operating systems users have access to data because they have access to tools such as File Transfer Protocol (FTP) and Open Database Connectivity (ODBC) via client access.**
 
-Control 1: Access to such tools such be restricted and granted on an as needed basis only.  Exit points are created to audit the such of such tools .
+**Control 1: Access to such tools such be restricted and granted on an as needed basis only.  Exit points are created to audit the such of such tools.**
 
-Test 1
+**Test 1**
 
+<pre>
 Question if any of the tools in the “notes to auditor” are in use. See if exit points are defined for these
 
 WRKREGINF *ALL *PRINT
@@ -151,7 +153,7 @@ Exit Point	Server Description
 *FTPREXEC	Remote command through FTP
 *REXEC_SO	Remote command sign-on (logon)
 *TFRFCL		Client file transfer server
-
+<pre>
 _____________________________________________
 
 Risk 3: The authority on systems programs and files within the operating system are not securely configured.
