@@ -7,11 +7,11 @@ Date:		18/06/18**
 
 _____________________________________________
 
-**Risk 1: The system is not configured securely or according to best practice.
+**Risk 1: The system is not configured securely or according to best practice.**
 
-Control 1: Ensure that the system values are configured security or according to best practice.
+**Control 1: Ensure that the system values are configured security or according to best practice.**
 
-Test 1**
+**Test 1**
 
 \
 
