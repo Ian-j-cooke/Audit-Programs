@@ -27,9 +27,7 @@ Also run
 PRTSYSSECA
 The Print System Security Attributes (PRTSYSSECA) command prints a report of security related system values and network attributes to a spooled file. The report includes the system value or network attribute name, the current value, and the recommended value.
 
-
-
-Notes to Auditor: System Value / Recommended Value / Explanation /
+Notes to Auditor: System Value / Recommended Value / Explanation
 
 QSECURITY / 40 or 50 / Controls the level of operating system integrity. Forty is the absolute minimum acceptable level.
 Thirty has numerous well-known exploits. Twenty and 10 indicate that every user has root-level privileges.
@@ -111,13 +109,11 @@ The non-intuitive values are:
 7=Cannot be the same as last 6
 8=Cannot be the same as last 4
 
-QPWDVLDPGM /  *NONE, *REGFAC or a program name / A system exit program that sees and controls password changes. A program may be registered that prevents 
-the creation of weak passwords or dictionary words. Any program registered here should be treated as very sensitive due to its ability to see and disclose
+QPWDVLDPGM /  *NONE, *REGFAC or a program name / A system exit program that sees and controls password changes. A program may be registered that prevents the creation of weak passwords or dictionary words. Any program registered here should be treated as very sensitive due to its ability to see and disclose
  passwords.
 
 <pre>
 _____________________________________________
-
 
 **Risk 2: Operating systems users have access to data because they have access to tools such as File Transfer Protocol (FTP) and Open Database Connectivity (ODBC) via client access.**
 
@@ -156,11 +152,11 @@ Exit Point	Server Description
 <pre>
 _____________________________________________
 
-Risk 3: The authority on systems programs and files within the operating system are not securely configured.
+**Risk 3: The authority on systems programs and files within the operating system are not securely configured.**
 
-Control 1: Authority to programs and files should be to authorised users only and on an as needed basis
+**Control 1: Authority to programs and files should be to authorised users only and on an as needed basis**
 
-Test 1:
+**Test 1:**
 
 For the application(s) under review, request an appropriately authorised user, to:
  
